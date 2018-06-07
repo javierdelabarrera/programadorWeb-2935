@@ -1,0 +1,18 @@
+
+
+.main-title {
+    text-align: center;
+    margin: auto;
+    width: 90%;
+}
+
+.big-button {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+}
+
+.normal-button {
+    display: flex;
+    flex-direction: column-reverse;
+}
