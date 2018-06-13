@@ -1,6 +1,6 @@
 // Datos de estudiantes para usar como carga incial
 
-var studentsList = [
+var students = [
   {
     firstName: 'Juan',
     lastName: 'Pérez',
@@ -26,15 +26,18 @@ var studentsList = [
 /**
  * Función que permite buscar la posición de un estudiante en el array,
  * comparando nombre o apellido por valor exacto
- * @param {String} text 
+ * @param {String} nameOrLastName 
  * @param {Array} studentsList 
  */
 
-function searchStudentIndexByText (text, studentsList) {
+function searchStudentIndexByText (nameOrLastName, studentsList) {
   var index = -1
   for (var i = 0; i < studentsList.length; i++) {
     var student = studentsList[i]
-    if (student.firstName === text || student.lastName === text) {
+    if (
+      student.firstName === nameOrLastName ||
+      student.lastName === nameOrLastName
+    ) {
       index = i
       break
     }
@@ -50,12 +53,13 @@ var text = prompt('Ingrese un nombre')
 
 // Llamo a la función definida anteriormente
 
-var index = searchStudentIndexByText(text, studentsList)
+var index = searchStudentIndexByText(text, students)
 
 // Evaluo el valor devuelto por la función y según eso muestro un mensaje en consola
 
 if (index !== -1) {
-  console.log('Se encontró el estudiante en la posición', index)
+  console.log('Se encontró el estudiante en la posición')
+  console.log(students[index])
 } else {
   console.log('No se pudo encontrar el estudiante')
 }
