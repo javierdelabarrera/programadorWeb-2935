@@ -30,14 +30,19 @@ var cars = [
   function Car (model,brand,year){
       var id = Math.random();
 
+    // propiedades publicas
       this.model = model;
       this.brand = brand;
       this.year = year;
 
+    // metodos publicos (agregamos el this. en el return, xq si no va directo al input original, xq prop seria priv)
       this.getCarName = function (){
-          return 'El modelo es ' + model + ', la marca es ' + brand + ', el año del auto es ' + year + '.';
+          return 'El modelo es ' + this.model + ', la marca es ' + this.brand + ', el año del auto es ' + this.year + '.';
       }
   }
+
+
+  // aca creamos array de objetos de instanciados
 
   var newCars = [];
 

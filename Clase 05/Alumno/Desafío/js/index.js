@@ -32,7 +32,7 @@ var students = [
 // function constructor
 
 function Student(firstName, lastName, dni, email) {
-    id = dni;
+    var id = dni;
 
     this.firstName = firstName;
     this.lastName = lastName;
@@ -42,8 +42,9 @@ function Student(firstName, lastName, dni, email) {
         return 'El id del estudiante es: ' + id;
     }
 
+    // de esta manera valido si no 
     this.getFullName = function () {
-        return 'El nombre completo del estudiante es: ' + firstName + ' ' + lastName + '.';
+        return (this.firstName || '') + ' ' + (this.lastName || '');
     }
 }
 
