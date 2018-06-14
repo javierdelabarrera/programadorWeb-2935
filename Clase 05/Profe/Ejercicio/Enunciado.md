@@ -22,12 +22,12 @@ var cars = [
     year: 2015
   },
   {
-    model:'Audi TT',
+    model:`Audi TT`,
     brand:'Audi',
     year: 2017
   },
   {
-    model:'Gran turismo',
+    model:`Gran turismo`,
     brand:'Maserati',
     year: 2018
   }
