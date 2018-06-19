@@ -139,3 +139,9 @@ function compare (a, b) {
 }
 
 console.log(students)
+
+function deleteElement (index, elements) {}
+
+var numbers = [ 1, 2, 3, 4, 5 ]
+
+deleteElement(2, numbers)
