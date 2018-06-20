@@ -3,7 +3,7 @@ console.log('Init app: Ejercicio Clase 6')
 var numbers = [ 1, 2, 3, 4, 5 ]
 
 function deleteElement (index, elements) {
-  if (Array.isArray(elements)) {
+  if (Array.isArray(elements) && typeof index === 'number') {
     var elements2 = elements.slice()
 
     elements2.splice(index, 1)
