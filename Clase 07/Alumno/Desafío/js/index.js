@@ -7,12 +7,18 @@ function getLocalList (key) {
       var parsedStudentsList = JSON.parse(studentsList)
       return parsedStudentsList
     } else {
-      studentsList = [ '' ]
-      return studentsList
+      return []
     }
-  } else {
-    console.log('Ingrese key valida')
   }
 }
 
-console.log(getLocalList('studentsList'))
+var studentsList = getLocalList('studentsList')
+
+if (studentsList) {
+  console.log(studentsList)
+}
+if (studentsList.length) {
+  console.log('Tiene guardados ' + studentsList.length + ' elementos')
+} else {
+  console.log('La lista esta vacia')
+}

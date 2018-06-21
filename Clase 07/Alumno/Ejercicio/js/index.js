@@ -25,8 +25,8 @@ var studentsList = [
 function saveLocalList (key, studentsList) {
   if (typeof key === 'string' && Array.isArray(studentsList)) {
     var stringifiedstudentsList = JSON.stringify(studentsList)
-    localStorage.setItem('list', stringifiedstudentsList)
+    localStorage.setItem(key, stringifiedstudentsList)
   }
 }
 
-saveLocalList('key', studentsList)
+saveLocalList('studentsList', studentsList)
