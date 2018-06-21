@@ -13,26 +13,26 @@
 
 // showName()
 
-var students = [
-  {
-    firstName: 'Juancito',
-    lastName: 'Pérez',
-    dni: 45678987,
-    email: 'juan@gmail.com'
-  },
-  {
-    firstName: 'Ana',
-    lastName: 'Fernandez',
-    dni: 45678989,
-    email: 'ana@gmail.com'
-  },
-  {
-    firstName: 'Pedro',
-    lastName: 'Mármol',
-    dni: 45678956,
-    email: 'pedro@gmail.com'
-  }
-]
+// var students = [
+//   {
+//     firstName: 'Juancito',
+//     lastName: 'Pérez',
+//     dni: 45678987,
+//     email: 'juan@gmail.com'
+//   },
+//   {
+//     firstName: 'Ana',
+//     lastName: 'Fernandez',
+//     dni: 45678989,
+//     email: 'ana@gmail.com'
+//   },
+//   {
+//     firstName: 'Pedro',
+//     lastName: 'Mármol',
+//     dni: 45678956,
+//     email: 'pedro@gmail.com'
+//   }
+// ]
 
 // var stringifyStudents = JSON.stringify(students)
 
@@ -51,3 +51,11 @@ var students = [
 // for (var i = 0; i < studentsList.length; i++) {
 //   console.log(studentsList[i].firstName)
 // }
+
+console.log('Hola 1')
+
+setTimeout(function () {
+  console.log('Hola 2')
+}, 0)
+
+console.log('Hola 3')
