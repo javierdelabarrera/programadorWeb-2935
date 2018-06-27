@@ -10,7 +10,7 @@ inputEmailNode.onblur = validateEmail
 function validateEmail (event) {
   var node = event.target
 
-  if (node.value.length > 0 && node.value.indexOf('@') !== -1 && node.value.indexOf('.') !== -1) {
+  if (node.value && node.value.indexOf('@') !== -1 && node.value.indexOf('.') !== -1) {
     console.log('Email correcto')
     node.classList.remove('is-invalid')
     node.classList.add('is-valid')
