@@ -3,6 +3,7 @@ console.log('Init app: Ejercicio Clase 7')
 var texts = [ 'Ed', 'Edd', 'Eddy' ]
 
 var mainListNode = document.getElementById('mainList')
+mainListNode.innerHTML = ''
 
 var individualText
 
