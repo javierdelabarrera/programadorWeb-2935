@@ -15,6 +15,7 @@ function Student (firstName, lastName, dni, email) {
 
   this.firstName = firstName
   this.lastName = lastName
+  this.dni = dni
   this.email = email
 
   this.getId = function () {
