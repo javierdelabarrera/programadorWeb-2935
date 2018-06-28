@@ -1,4 +1,4 @@
-console.log('Init app: Ejercicio Clase 7')
+console.log('Init app: Ejercicio Clase 8')
 
 var texts = [ 'Ed', 'Edd', 'Eddy' ]
 
