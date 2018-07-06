@@ -4,22 +4,21 @@ var squareJQNodes = $('.square')
 
 squareJQNodes.click(setSquareOrCircle)
 
-var play = true
+var player = true
 var moves = 0
 
 function setSquareOrCircle (event) {
   var squareJQNode = $(this)
 
   if (moves <= 9) {
-    if (play) {
+    if (player) {
       squareJQNode.addClass('cross')
-      play = false
       moves++
     } else {
       squareJQNode.addClass('circle')
-      play = true
       moves++
     }
+    player = !player
   } else {
     console.log('Limite de movimientos alcanzado')
   }
