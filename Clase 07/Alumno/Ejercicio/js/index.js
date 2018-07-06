@@ -24,7 +24,9 @@ var studentsList = [
 
 function saveLocalList (key, studentsList) {
   if (typeof key === 'string' && Array.isArray(studentsList)) {
+    // convierto a json el array
     var stringifiedstudentsList = JSON.stringify(studentsList)
+    // guardo en el ls pisando la key
     localStorage.setItem(key, stringifiedstudentsList)
   }
 }
