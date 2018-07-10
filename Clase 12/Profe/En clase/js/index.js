@@ -101,12 +101,18 @@ console.log('Init app')
 //   console.log('Blur', value)
 // }
 
-var deleteButtonJQNode = $('#deleteButton')
+// var deleteButtonJQNode = $('#deleteButton')
 
-deleteButtonJQNode.click(clearFields)
+// deleteButtonJQNode.click(clearFields)
 
-function clearFields () {
-  var inputJQNodes = $('[type=text]')
+// function clearFields () {
+//   var inputJQNodes = $('[type=text]')
 
-  inputJQNodes.val('Pato')
-}
+//   inputJQNodes.val('Pato')
+// }
+
+// var pepe = 0
+
+// console.log(pepe++)
+
+// console.log(++pepe)
