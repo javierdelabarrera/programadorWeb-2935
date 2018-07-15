@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  console.log('Init app: Desafio Clase 13 Domingo II')
+  console.log('Init app: Desafio Clase 13')
 
   // capturo elementos html por id y lo asigno a vars
   var firstNameInputNode = $('#firstName')
