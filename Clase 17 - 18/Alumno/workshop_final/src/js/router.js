@@ -1,18 +1,24 @@
 import crossroads from 'crossroads'
 
-crossroads.addRoute('/', function () {
-  console.log('Home page')
-})
+import homeController from './controllers/homeController'
+import contactController from './controllers/contactController'
 
-// En cada cambio del # va a verificar las rutas
-$(window).on('hashchange', function () {
+$(document).ready(function () {
+  console.log('Init App Workshop Final')
+
+  // pruebo agregar addRoute a contact page
+  crossroads.addRoute('#/contact', function () {
+    $('#root').load('./partials/contact.html', contactController)
+  })
+
+  crossroads.addRoute('/', function () {
+    $('#root').load('./partials/home.html', homeController)
+  })
+
+  // En cada cambio del # va a verificar las rutas
+  $(window).on('hashchange', function () {
+    crossroads.parse(window.location.hash)
+  })
+
   crossroads.parse(window.location.hash)
-})
-
-crossroads.parse(window.location.hash)
-
-// pruebo agregar addRoute a contact page
-
-crossroads.addRoute('#/contact', function () {
-  console.log('Contact page')
 })
